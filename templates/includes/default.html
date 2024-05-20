@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<style type="text/css">
+      .text{
+    margin-top: 10px;
+}
+
+
+.hero-section-sub-heading{
+    font-size: 40px;
+
+}   
+.hero-section-heading{
+    font-size: 35px;
+    color: #407BFF;
+    font-weight: 800;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    /* box-sizing:border-box; */
+    scroll-behavior: smooth;
+    font-family: 'roboto';
+}
+.role{
+    color:#407bff;
+    font-weight: 700;
+}
+.logo{
+    height: 30px;
+    width: 30px;
+}
+/* Navbar styling */
+.photo {
+    width: 400px;
+    height: 350px;
+    margin-left: 250px;
+    margin-top: -160px;
+    box-shadow: 0px 0px 20px 5px rgba(64, 123, 255, 0.5);
+    background-color: #407bff;
+    border-radius: 8px; /* Adjust the value to change the roundness */
+}
+
+
+.navbar {
+    
+    
+    max-width: 100%;
+    background-color: #407BFF;
+    margin: 0 auto; /* Center the navbar */
+    padding-bottom: 20px;
+    height: 70px;
+}
+.tittle{
+    margin-left: -100px;
+    font-weight: 600;
+color: white;}
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    
+   
+}
+.text{
+    color: white;
+}
+
+.nav-items{
+    display: flex;
+    gap: 2rem;
+    margin-top: 8px;
+}
+.nav-items div{
+    font-size: 21px;
+    font-weight: 200;
+    margin-left: 1px;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.nav-items div:hover{
+    transition: all 1s;
+    font-style: bold;
+}
+  
+  /* .Hero-section */
+.Hero-section {
+    display: flex;
+    max-width: 1080px;
+    margin: 20px auto ;
+    margin-bottom: 100px; /* Center the hero section */
+
+  }
+
+.style{
+    font-size: 38px;
+    color: #407BFF;
+
+  }
+p {
+    text-align: justify;
+  }
+  
+  
+  /* Left section styling */
+  .left {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  /* Right section styling */
+  .right {
+    flex: 1;
+    padding: 20px;
+  }
+  .faded-text{
+    user-select: none;
+    font-size: 12rem;
+    color: rgb(187, 186, 186);
+
+
+bottom: 7px;    left: 16%;
+    font-weight: bold;
+    transition: all 3s;
+    position: absolute;
+
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin-top: 100px;
+    gap: 2rem;
+}
+.second-hero-section{
+    margin-top: 80px ;
+    margin-bottom: 180px;
+}
+.inner-container{
+    background-color: #407BFF;
+    height: 500px;
+    display: flex;
+}
+
+
+.design{
+    position: relative;
+}
+
+.icon-dot{
+    z-index: 9;
+   bottom: -1rem;
+    right: 0;
+    animation: dotsanimation 5s linear infinite;
+    margin-left: 75px;
+    margin-top: 20px;
+
+
+}
+@keyframes dotsanimation {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-15px);
+
+    }
+    100%{
+        transform: translateX(0px);
+    }
+
+}
+.icon-cube{
+    z-index: 2;
+    top: -1rem;
+    right: -0.9rem;
+    animation: cuberotate 3s linear infinite;
+    margin-left: 120px;
+    margin-top:-60px;
+
+
+
+}
+@keyframes cuberotate {
+        0%{
+            transform: rotateX(0deg) translateX(0px);
+
+        }
+        50%{
+            transform: rotateX(180deg) translateX(-8px);
+
+        }
+        100%{
+
+            transform:rotateX(360deg) translateX(0px);
+        }
+        
+    }
+.icon-circle{
+    z-index: 9;
+    bottom: 0rem;
+    left: 0;
+    animation: shakeEffect 6s linear infinite;
+    margin-left: 150px;
+    
+
+}
+@keyframes shakeEffect {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px) rotate(5deg);
+    }
+    50% {
+        transform: translateX(5px) rotate(-5deg);
+    }
+    75% {
+        transform: translateX(-5px) rotate(5deg);
+    }
+    100% {
+        transform: translateX(0) rotate(0deg);
+    }
+}
+
+.icon-zigzag{
+        z-index: 9;
+        top: 1.5rem;
+        left: -0.3rem;
+        animation: zigzag 5s ease-in infinite ;
+        margin-bottom: 30px;
+        margin-left: 30px;
+
+
+}
+@keyframes zigzag {
+
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(10px, -10px);
+    }
+    50% {
+        transform: translate(0, 0);
+    }
+    75% {
+        transform: translate(-10px, -10px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+.icon-plus{
+    z-index: 9;
+    top: -1rem;
+    left: 50%;
+    animation: shakeEffectplus 5s ease-in infinite;
+    margin-left: 30px;
+    margin-top: -20px;
+
+}
+@keyframes shakeEffectplus {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px) rotate(5deg);
+    }
+    50% {
+        transform: translateX(5px) rotate(-5deg);
+    }
+    75% {
+        transform: translateX(-5px) rotate(5deg);
+    }
+    100% {
+        transform: translateX(0) rotate(0deg);
+    }
+    
+}
+.brief{
+    margin: auto;
+    color: white;
+    width:500px;
+    text-align: center;
+    justify-content: center;
+    
+}
+.icon-zigzag-1{
+    z-index: 9;
+    top: 1.5rem;
+    left: -0.3rem;
+    animation: zigzag-1 5s ease-in infinite ;
+    margin-top: -90px;
+    margin-left: 60px;
+
+
+}
+@keyframes zigzag-1 {
+
+0% {
+    transform: translate(0, 0);
+}
+25% {
+    transform: translate(10px, -10px);
+}
+50% {
+    transform: translate(0, 0);
+}
+75% {
+    transform: translate(-10px, -10px);
+}
+100% {
+    transform: translate(0, 0);
+}
+}
+
+
+.tabcontent{
+    height: 550px;
+    width: 1080px;
+    max-width: 1080px;
+    margin: 0 auto ;
+        
+}
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Center the content horizontally */
+  width: 100%;
+  background-color: #407bff;
+margin-top: 100px;  padding: 50px; /* Add padding */
+
+
+}
+
+    .contact-details {
+      width: 50%;
+      padding: 20px;
+      box-sizing: border-box;
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+    .map {
+      width: 50%;
+    }
+    iframe {
+      width: 70%;
+      height: 300px;
+      border: none;
+      border-radius: 8px;
+    }
+
+.form-control {
+            width: 100%; /* Full width */
+            padding: 6px 12px; /* Some padding */
+            margin: 4px 0; /* Some margin */
+            display: inline-block; /* Ensuring proper spacing */
+            border: 1px solid #ccc; /* Gray border */
+            border-radius: 4px; /* Rounded borders */
+            box-sizing: border-box; /* Make sure padding does not affect the box size */
+            font-size: 16px; /* Increase font size */
+        }
+        
+        .form-control:focus {
+            border-color: #407bff; /* Change border color on focus */
+            outline: none; /* Remove the default focus outline */
+        }
+        
+        label {
+            font-size: 18px; /* Increase font size for the label */
+            color: #5a5a5a; /* Dark grey color for the text */
+            display: block; /* Ensure it takes up the full width */
+        }
+
+
+ul {
+    list-style: none;
+    padding-left: 20px; /* Add some padding to align with the checkmarks */
+  }
+  
+  ul li {
+    position: relative; /* Position relative for absolute positioning of checkmark */
+    padding-bottom: 5px; /* Add some vertical gap between points */
+  }
+  
+  ul li:before {
+    content: '➤';
+    position: absolute;
+    left: -20px; /* Adjust the position to create a gap */
+    top: 1px; /* Adjust the position to center vertically */
+  }
+  
+.head{
+    user-select: none;
+    font-size: 12rem;
+    color: rgb(187, 186, 186);
+        left: 55%;
+    margin-top: -150px;
+    font-weight: bold;
+    transition: all 3s;margin-bottom: 80px;
+    position: absolute;
+    margin-bottom: 100px;
+}
+.blood{
+    height: 450px;
+    width: 450px;
+margin-left: 100px;}
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+.checker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Set the height to occupy the full viewport height */
+}
+.intro-text {
+  font-size: 18px; /* Change the font size as needed */
+}
+
+.contact-info {
+  font-size: 16px; /* Change the font size as needed */
+}
+.neel{
+    user-select: none;
+    font-size: 12rem;
+    color: rgb(187, 186, 186);
+
+
+top: 1931px;    left: 16%;
+    font-weight: bold;
+    transition: all 3s;
+    position: absolute;
+
+}
+
+
+
+
+.third-hero-section{
+    display: flex;
+    margin-top: 150px;
+    justify-content: space-between;
+}
+@media screen and (max-width: 576px) {
+    /* Styles for screens up to 576px */
+    .third-hero-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .blood {
+        margin-left: 0;
+        margin-top: 20px;
+        height: 200px;
+        width: 200px;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    /* Styles for screens between 577px and 768px */
+    .third-hero-section {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .blood {
+        margin-left: 80px;
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    /* Styles for screens larger than 768px */
+    .third-hero-section {
+        justify-content: space-between;
+    }
+
+    .blood {
+        margin-left: 80px;
+        margin-top: 0;
+    }
+}
+
+      
+    </style> 
+
+  </head>
+  
+  <body>
+    {% block body%}
+    <div class="bg"> 
+      <div class="navbar">
+        <span>
+          <h1 class="tittle" style=" font-size:24px; font-weight: bolder; cursor: pointer;">BrainForecast</h1>
+        </span>
+        <div class="nav-items">
+          <div><a href="#Brief">Brief</a></div>
+          <div><a href="#Symptosage">Symptosage</a></div>
+        </div>
+      </div>
+
+      
+  <div class="Hero-section">
+    <div class="left">
+
+      <div class="hero-section-heading">BrainForecast </div>
+      <div class="hero-section-sub-heading">
+        I am <span id="typedElement" class="role"></span>
+    </div>
+    
+    <script>
+        var textToType = "Symptosage";
+        var typingSpeed = 150; // Typing speed in milliseconds
+        var eraseSpeed =150; // Erasing speed in milliseconds
+        var delayBetweenAnimation = 150; // Delay between animations in milliseconds
+    
+        function typeAndErase(element, text, index) {
+            if (index < text.length) {
+                element.innerHTML += text.charAt(index);
+                index++;
+                setTimeout(function() {
+                    typeAndErase(element, text, index);
+                }, typingSpeed);
+            } else {
+                setTimeout(function() {
+                    eraseText(element, text.length);
+                }, delayBetweenAnimation);
+            }
+        }
+    
+        function eraseText(element, length) {
+            if (length >= 0) {
+                var newText = textToType.substring(0, length);
+                element.innerHTML = newText;
+                length--;
+                setTimeout(function() {
+                    eraseText(element, length);
+                }, eraseSpeed);
+            } else {
+                setTimeout(function() {
+                    typeAndErase(element, textToType, 0);
+                }, delayBetweenAnimation);
+            }
+        }
+    
+        window.onload = function() {
+            var element = document.getElementById("typedElement");
+            typeAndErase(element, textToType, 0);
+        };
+    </script>
+    
+
+      <h4 style="line-height: 1.2; justify-content: center;"  >
+        Welcome to SymptoSage,
+        <br>
+
+        <br> Discover the intersection of health and intuition with<span style="color: #407bff; font-weight: bold;">
+            BrainForecast SymptoSage
+        </span>, where predictive insights <br>decode symptoms, empowering a proactive approach <br>to disease awareness. Begin your personalized journey<br>
+         to well-being guided by SymptoSage's intuitive wisdom, embracing a healthier future.
+      </h4>
+    </div>
+    <div class="right">
+      <img src="../../static/Online Doctor.gif">
+    </div>
+  </div>
+
+            <div class="second-hero-section">
+    <h1 class="faded-text">Brief</h1>
+    <div class="inner-container">
+
+      <div class="design" >
+        
+        <div class="absolute icon icon-dot">
+            <img src="../../static/dots.png" alt="">
+        </div>
+
+        <div class="absolute icon icon-circle">
+            <img src="../../static/circle.png" alt="">
+        </div>
+
+        <div class="absolute icon icon-zigzag">
+            <img src="../../static/zigzags.png" alt="">
+
+        </div>
+        <img src="../../static/blood research.gif" class="photo">
+
+        <div class="absolute icon icon-zigzag-1">
+          <img src="../../static/zigzags.png" alt="">
+
+      </div>
+        
+        <div class="absolute icon icon-plus">
+            <img src="../../static/plus.png" alt="">
+
+        </div>
+        <div class="absolute icon icon-cube">
+            <img src="../../static/cube.png" alt="">
+
+        </div>
+        
+    </div>
+    <h4 class="brief" id="Brief" style="line-height: 1.2; text-align: left; padding-left: 15px;">
+        <ul>
+            <li>
+                The initiative represents a significant advancement in healthcare analytics, particularly targeting brain diseases.
+            </li>
+            <br>
+
+            <li> Utilizing a vast dataset of over 5000 symptoms, the machine learning model achieves an impressive accuracy rate of 98.93% in predicting brain-related diseases.</li>
+            <br><li>SymptoSage, the core of the advancement, employs advanced analytics to decipher intricate symptom patterns associated with brain health.</li>
+            <br><li> SymptoSage Pro not only accelerates diagnosis but also equips healthcare professionals with critical insights, thereby elevating the care of brain health to exceptional levels of accuracy and efficiency.</li>
+        </ul>
+
+      </h4>
+      
+    </div>
+            </div>
+                    <div class="head" id="Symptosage" >
+                     Symptosage
+                        </div>
+
+
+<div id="Symptom" class="tabcontent">
+
+  <form name="SymptomForm"  id="SymForm" method="POST" action=/disease_predict>
+    
+    <div class="form-group">
+     
+        <label for="Symptom1" align="left">Symptom 1</label>
+        <input type="text" list="symp" multiple="multiple" class="form-control" name="Symptom1" id="customInput"  autocomplete="off">
+        <datalist id="symp">
+            {% for symp in symptoms %}
+            <option value="{{ symp }}">{{ symp }}</option>
+            <div id="customDropdown" class="dropdown-content">
+                
+            </div>
+            {% endfor %}
+        </datalist>
+
+      <label for="Symptom2" align="left">Symptom 2</label>
+      <input type="text" list="symp" multiple="multiple" class="form-control" name="Symptom2">
+      <datalist id="symp">
+          {% for symp in symptoms %}
+          <option value= "{{symp}}">{{symp}}</option>
+        {% endfor %}
+      </datalist>
+
+      <label for="Symptom3" align="left">Symptom 3</label>
+      <input type="text" list="symp" multiple="multiple" class="form-control" name="Symptom3">
+      <datalist id="symp">
+          {% for symp in symptoms %}
+          <option value= "{{symp}}">{{symp}}</option>
+        {% endfor %}
+      </datalist>
+
+      <label for="Symptom4" align="left">Symptom 4</label>
+      <input type="text" list="symp" multiple="multiple" class="form-control" name="Symptom4">
+      <datalist id="symp">
+          {% for symp in symptoms %}
+          <option value= "{{symp}}">{{symp}}</option>
+        {% endfor %}
+      </datalist>
+
+      <label for="Symptom5" align="left">Symptom 5</label>
+      <input type="text" list="symp" multiple="multiple" class="form-control" name="Symptom5">
+      <datalist id="symp">
+          {% for symp in symptoms %}
+          <option value= "{{symp}}">{{symp}}</option>
+        {% endfor %}
+      </datalist>
+
+
+      
+      
+    </div>
+    
+    <button type="submit" class="btn btn-primary" style="padding: 10px; background-color: #407BFF; " name=form>Check</button>
+</form>
+
+</div>
+
+<div class="contact-container">
+
+  <div class="contact-details">
+
+    <h1 class="neel">Contact Us</h1>
+    <h1 style="color: white;">HopeCare India - The Best Rehabilitation Centre in Delhi</h1>
+    <div style="color: white;" class="intro-text">
+        <p style="color: white;">A sanctuary dedicated to holistic healing and recovery. Our center specializes in comprehensive rehabilitation services for individuals recovering from injuries, surgeries, or dealing with chronic conditions.</p>
+      </div>
+      
+      <div class="contact-info">
+        <p style="color: white;"><strong>Phone Number:</strong> 09311112377</p>
+        <p style="color: white;"><strong>Address:</strong> 137, South Extension II, Masjid Moth Village, New Delhi, Delhi 110049</p>
+      </div>
+      
+  </div>
+  <div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.617261787614!2d77.2161875144042!3d28.562816182454063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce241ee03b7a9%3A0xf30cd86f42bfc88a!2sHopeCare%20India%20%7C%20Best%20Rehabilitation%20Centre%20in%20Delhi%20%7C%20ADHD%20treatment%20in%20Delhi!5e0!3m2!1sen!2sin!4v1649408056737!5m2!1sen!2sin" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
+
+<!-- <h3 style="color: #666; text-align: center !important;">&copy; 2024 by Tanishq and Team
+</h3> -->
+
+
+
+
+
+</div>
+
+</div>
+<script>
+
+  
+function openTab(tabName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(tabName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+document.getElementById('customInput').addEventListener('input', function() {
+    var inputVal = this.value;
+    // Assuming you have an array `symptoms` with the options
+    var filteredSymptoms = symptoms.filter(function(symptom) {
+        return symptom.toLowerCase().includes(inputVal.toLowerCase());
+    });
+    // Populate your dropdown with these filteredSymptoms
+    // And make the dropdown visible
+});
+
+</script>
+
+    {% endblock %}
+  </body>
+ 
+</html>

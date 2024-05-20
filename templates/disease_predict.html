@@ -1,0 +1,66 @@
+    {% include 'includes/default.html' %}
+    <body>
+        <div id="prediction"  style="position: absolute; top: 2220px; left: 50%; transform: translate(-50%, -50%); height:500px; width: 100%; background-color: #407bff;">
+            <form>
+
+                <h1 class="faded-text" style="user-select: none;
+                font-size: 12rem;
+                color: rgb(192, 191, 191);
+                margin-bottom: 467px;            
+                left: 16%;
+                font-weight: bold;
+                transition: all 3s;
+                position: absolute;
+            ">Analysis</h1>
+            <span style="font-family: Georgia; font-size: 30px; color: white; position: absolute; top: 10%; left: 50%; transform: translate(-50%, -50%);">
+                <br>   There are chances you are suffering from 
+                <strong>{{disease[0]}}</strong>
+                <br>
+              
+            </span>
+            <br>
+           
+    <div style="display: flex; width: 1080px; margin: 80px auto;">
+         <div style="text-align: center; font-size: 24px; color: white; width: 500px;margin-top: 20px;">
+               We strongly advise you to connect with a professional as soon as possible
+         <p style="text-align: center; margin-top: 20px; font-size: 18px; color: white;width: 500px;">
+            Seeking medical attention promptly is crucial for timely diagnosis, effective treatment, and better management of your health condition. A qualified healthcare professional can provide personalized care, offer expert advice, and recommend appropriate interventions to improve your well-being.
+             <br>
+             <br>
+
+             Don't delay - schedule an appointment with a doctor today for <strong>{{disease[0]}}</strong>.
+
+        </p>
+         </div>
+             <img src="../static/Doctors.gif" style=" width: 400px; height: 350px; margin-left: 100px;   box-shadow: 0px 0px 20px 5px rgba(64, 123, 255, 0.5);
+             background-color: #407bff;
+             border-radius: 8px; /* Adjust the value to change the roundness */ " alt="Doctor image">
+    
+    </div>
+        
+            </form>
+
+        </div>
+        <div class="contact-container" style="background-color: aliceblue !important; color: black !important;"
+        >
+
+            <div class="contact-details">
+          
+              <h1 class="neel" style="top: 2475px; left: 55%; ">Contact Us</h1>
+              <h1 style="color: black">HopeCare India - The Best Rehabilitation Centre in Delhi</h1>
+              <div style="color:black;" class="intro-text">
+                  <p style="color:black;">A sanctuary dedicated to holistic healing and recovery. Our center specializes in comprehensive rehabilitation services for individuals recovering from injuries, surgeries, or dealing with chronic conditions.</p>
+                </div>
+                
+                <div class="contact-info">
+                  <p style="color:black;"><strong>Phone Number:</strong> 09311112377</p>
+                  <p style="color:black;"><strong>Address:</strong> 137, South Extension II, Masjid Moth Village, New Delhi, Delhi 110049</p>
+                </div>
+                
+            </div>
+            <div class="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.617261787614!2d77.2161875144042!3d28.562816182454063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce241ee03b7a9%3A0xf30cd86f42bfc88a!2sHopeCare%20India%20%7C%20Best%20Rehabilitation%20Centre%20in%20Delhi%20%7C%20ADHD%20treatment%20in%20Delhi!5e0!3m2!1sen!2sin!4v1649408056737!5m2!1sen!2sin" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+          
+        </body>
